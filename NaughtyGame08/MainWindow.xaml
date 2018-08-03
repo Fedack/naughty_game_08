@@ -1,0 +1,27 @@
+﻿<Window x:Class="NaughtyGame08.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NaughtyGame08"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1280" MinWidth="720">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="400"/>
+            <ColumnDefinition MinWidth="0" Width="0"/>
+        </Grid.ColumnDefinitions>
+        <FlowDocumentScrollViewer x:Name="myFlowDocumentReader">
+            <FlowDocument x:Name="myFlowDocument" PagePadding="20" ColumnGap="20" IsColumnWidthFlexible="True" ColumnWidth="700">
+                <Paragraph>
+                    <Run x:Name="ScriptText" />
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <FlowDocumentScrollViewer x:Name="myFlowDocumentReader2" Grid.Column="1" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+            <FlowDocument x:Name="myFlowDocument2" PagePadding="0">
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
+    
