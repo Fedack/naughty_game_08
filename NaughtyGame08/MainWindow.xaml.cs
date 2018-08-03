@@ -66,7 +66,7 @@ namespace NaughtyGame08
             AddInline($@"The dragon looked toward the ", key, " and blinked twice.");
             void KeyRoom()
             {
-                AddInline($@"The key is fantastic.");
+                AddInline($@"The key is fantastic. Really so!");
             }
         }
         void RandomEventRoom()
